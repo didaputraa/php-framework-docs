@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Service · PHP Framework</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="```"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Service · PHP Framework"/><meta property="og:type" content="website"/><meta property="og:url" content="undefined/php-framework-docs/index.html"/><meta property="og:description" content="```"/><meta property="og:image" content="undefined/php-framework-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="undefined/php-framework-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/php-framework-docs/undefined"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/php-framework-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/php-framework-docs/css/main.css"/><script src="/php-framework-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/php-framework-docs/"><h2 class="headerTitle">PHP Framework</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/php-framework-docs/docs/doc0.html" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Service</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Pendahuluan</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc0.html">Persiapan</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Controller</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc1.html">Penerapan Controller</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc1-1.html">Penerapan validasi</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Routing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc2.html">Penerapan Route</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Model</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc3.html">Penerapan Model</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc3-1.html">Model Fungsi Umum</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc3-2.html">Create Update Delete</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc3-3.html">Model Relation</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Database Builder</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc10.html">Penerapan</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Template Engine</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc8.html">Dasar template engine</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc8-1.html">Menampilkan data di template</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc8-2.html">Kontrol struktur</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Collection</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc4.html">Fungsi Umum</a></li><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc4-1.html">Cache</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Middleware</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc5.html">Middleware</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Service</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/php-framework-docs/docs/doc6.html">Service</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Auth</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc7.html">Auth</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Protection</h3><ul class=""><li class="navListItem"><a class="navItem" href="/php-framework-docs/docs/doc9.html">CSRF</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Service</h1></header><article><div><span><pre><code class="hljs"><span class="hljs-selector-tag">php</span> <span class="hljs-selector-tag">engine</span> <span class="hljs-selector-tag">service</span><span class="hljs-selector-pseudo">:examService</span>
+</code></pre>
+<p>Kemudian lihat pada App/Service/examService.php</p>
+<pre><code class="hljs"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">App</span>\<span class="hljs-title">Service</span>
+
+<span class="hljs-title">use</span> <span class="hljs-title">System</span>\<span class="hljs-title">Core</span>\<span class="hljs-title">Http</span>\<span class="hljs-title">Request</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">examService</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">register</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">echo</span> <span class="hljs-string">'service examService berjalan...'</span>;
+    }
+}
+</span></code></pre>
+<p>Daftarkan pada kernel Config/Kernel.php</p>
+<pre><code class="hljs"><span class="php"><span class="hljs-meta">&lt;?php</span>
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">Config</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Kernel</span>
+</span>{
+    <span class="hljs-keyword">public</span> $middlewareRoute = [
+        <span class="hljs-string">'Auth'</span> =&gt;  \App\Middleware\Auth::class
+    ];
+    
+    
+    <span class="hljs-keyword">public</span> $serviceRoute    = [
+        <span class="hljs-string">'csrf'</span> =&gt; \App\Service\CSRF_Provider::class,
+        
+        <span class="hljs-string">'exam'</span> =&gt; \App\Service\examService::class <span class="hljs-comment">//new service</span>
+    ];
+}
+</span></code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/php-framework-docs/docs/doc5.html"><span class="arrow-prev">← </span><span>Middleware</span></a><a class="docs-next button" href="/php-framework-docs/docs/doc7.html"><span>Auth</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2020</section></footer></div></body></html>
